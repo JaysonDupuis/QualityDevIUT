@@ -8,9 +8,9 @@ namespace TD_1_MARE
 {
     internal class Media
     {
-        private string titre;
+        public string titre { get; set; }
 
-        private int reference;
+        public int reference { get; set; }
 
         public int nombreExemplaireDispo { get; set; }
 

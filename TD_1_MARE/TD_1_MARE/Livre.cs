@@ -8,7 +8,7 @@ namespace TD_1_MARE
 {
     internal class Livre : Media
     {
-        private string auteur;
+        public string auteur;
 
         public Livre(string auteur, string titre, int reference, int nombreExemplaireDispo) : base(titre, reference, nombreExemplaireDispo)
         {

@@ -12,8 +12,6 @@ namespace TD_1_MARE
 
         private List<Emprunt> listEmprunts { get; set; } = new List<Emprunt>();
 
-        private int indexer;
-
         public void AddMedia(Media media)
         {
             library.Add(media);
@@ -24,16 +22,16 @@ namespace TD_1_MARE
             library.Remove(media);
         }
 
-        public Boolean EmprunterMedia(Media media, String nomEmprunteur)
+        public Emprunt? EmprunterMedia(Media media, String nomEmprunteur)
         {
             if (media.nombreExemplaireDispo > 0)
             {
                 media.nombreExemplaireDispo--;
                 Emprunt nouvelEmprunt = new Emprunt(media, nomEmprunteur);
                 listEmprunts.Add(nouvelEmprunt);
-                return true;
+                return nouvelEmprunt;
             }
-            return false;
+            return null;
         }
 
         public Boolean RetourMedia(Emprunt emprunt)
@@ -45,6 +43,18 @@ namespace TD_1_MARE
             }
             return false;
             
+        }
+
+        public Media? RechercheMedia(String saisieRecherche)
+        {
+            foreach (Media media in library)
+            {
+                if(saisieRecherche == media.titre || saisieRecherche == media.reference.ToString())
+                {
+                    return media;
+                }
+            }
+            return null;
         }
       
     }
