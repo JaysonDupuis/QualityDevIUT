@@ -14,9 +14,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\kevin\\OneDrive\\Bureau\\Jayson\\Cours\\MARE\\TD1\\TD_1_MARE\\TD_1_MARE\\TD_1_MARE.csproj",
-      "projectName": "TD_1_MARE",
-      "projectPath": "C:\\Users\\kevin\\OneDrive\\Bureau\\Jayson\\Cours\\MARE\\TD1\\TD_1_MARE\\TD_1_MARE\\TD_1_MARE.csproj",
+      "projectUniqueName": "C:\\Users\\kevin\\OneDrive\\Bureau\\Jayson\\Cours\\MARE\\TD1\\TD_1_MARE\\TD_1_MARE\\DUPUIS_JAYSON_TD1.csproj",
+      "projectName": "DUPUIS_JAYSON_TD1",
+      "projectPath": "C:\\Users\\kevin\\OneDrive\\Bureau\\Jayson\\Cours\\MARE\\TD1\\TD_1_MARE\\TD_1_MARE\\DUPUIS_JAYSON_TD1.csproj",
       "packagesPath": "C:\\Users\\kevin\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\kevin\\OneDrive\\Bureau\\Jayson\\Cours\\MARE\\TD1\\TD_1_MARE\\TD_1_MARE\\obj\\",
       "projectStyle": "PackageReference",

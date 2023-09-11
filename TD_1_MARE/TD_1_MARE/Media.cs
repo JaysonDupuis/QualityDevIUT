@@ -12,7 +12,7 @@ namespace TD_1_MARE
 
         private int reference;
 
-        private int nombreExemplaireDispo;
+        public int nombreExemplaireDispo { get; set; }
 
         public Media(string titre, int reference, int nombreExemplaireDispo)
         {
