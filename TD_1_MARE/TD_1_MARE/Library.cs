@@ -56,6 +56,17 @@ namespace TD_1_MARE
             }
             return null;
         }
+
+        public List<Emprunt>? RechercheEmprunt(String emprunteur)
+        {
+            foreach (Emprunt emprunt in listEmprunts)
+            {
+                if(emprunt.emprunteur == emprunteur)
+                {
+
+                }
+            }
+        }
       
     }
 }
