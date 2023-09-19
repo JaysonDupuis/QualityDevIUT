@@ -61,11 +61,13 @@ namespace Calculatrice_Amphi
         }
 
         [TestMethod]
+        [ExpectedException(typeof(ArgumentException))]
         public void TestDivideWithZero()
         {
             Calculator testCalculatrice = new Calculator();
 
-            Assert.ThrowsException<ArgumentException>(() => testCalculatrice.Divide(valeur1, 0));
+            //Assert.ThrowsException<ArgumentException>(() => testCalculatrice.Divide(valeur1, 0));
+            int result = testCalculatrice.Divide(valeur2,0);
 
         }
     }

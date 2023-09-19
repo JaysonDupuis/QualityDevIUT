@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TD_1_MARE
+namespace DUPUIS_JAYSON_TD1
 {
-    internal class Library
+    public class Library
     {
         private List<Media> library { get; set; } = new List<Media>();
 
@@ -59,12 +59,21 @@ namespace TD_1_MARE
 
         public List<Emprunt>? RechercheEmprunt(String emprunteur)
         {
+            List<Emprunt> listEmpruntes = new List<Emprunt>();
             foreach (Emprunt emprunt in listEmprunts)
             {
                 if(emprunt.emprunteur == emprunteur)
                 {
-
+                    listEmpruntes.Add(emprunt);
                 }
+            }
+            if (listEmpruntes.Count > 0)
+            {
+                return listEmpruntes;
+            }
+            else
+            {
+                return null;
             }
         }
       

@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TD_1_MARE
+namespace DUPUIS_JAYSON_TD1
 {
-    internal class Media
+    public class Media
     {
         public string titre { get; set; }
 
